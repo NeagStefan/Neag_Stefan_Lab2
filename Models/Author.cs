@@ -1,4 +1,7 @@
-﻿namespace Neag_Stefan_Lab2.Models
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+
+namespace Neag_Stefan_Lab2.Models
 {
     public class Author
     {
@@ -6,6 +9,15 @@
         public string FirstName { get; set; }
         public string LastName { get; set; }
 
-        public ICollection<Book>? Books { get; set; } // navigation property
+        [Display(Name = "Full Name")]
+        public string FullName
+        {
+            get
+            {
+                return FirstName + " " + LastName;
+            }
+        }
+
+        public ICollection<Book>? Books { get; set; }
     }
 }

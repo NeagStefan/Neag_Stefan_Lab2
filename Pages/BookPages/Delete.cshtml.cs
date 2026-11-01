@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
+using Neag_Stefan_Lab2.Data;
 using Neag_Stefan_Lab2.Models;
 
 namespace Neag_Stefan_Lab2.Pages.BookPages;

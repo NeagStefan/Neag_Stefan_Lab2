@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Neag_Stefan_Lab2.Data;
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("Neag_Stefan_Lab2Context") ?? throw new InvalidOperationException("Connection string 'Neag_Stefan_Lab2Context' not found.");
 
